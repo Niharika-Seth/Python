@@ -25,3 +25,8 @@ print("The data type of the 'name' variable is:" ,type(name))
 print("The data type of the 'age' variable is:" ,type(age))
 print("The data type of the 'price' variable is:" ,type(price)) 
 print("The data type of the 'a' variable is:" ,type(a))
+
+# Aritmetic Operators
+a=10
+b = 5
+print("SUM OF TWO NUMBERS: " , (a+b))
