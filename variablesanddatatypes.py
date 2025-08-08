@@ -70,3 +70,21 @@ print("(a<b) AND (b>a) :" , (a<b) & (b>a))
 print("(a<b) AND (b<a) :" , (a<b) & (b<a))
 print("(a<b) OR (b<a) : " , (a<b) | (b<a))
 print("NOT(a<b): " , not(a<b))
+
+# Type Conversion ----> Automatic conversion (for instance: float is superior than int , so the sum of float and int data type will produce result in float data type)
+a = 30
+b = 65.9
+print("The sum of a and b are: " , (a+b))
+
+# Type Casting ----> Manual Conversion (for instance: when we try to add string and float data type the python will throw error , since the types are not compatible to be added)
+a = "35"
+f = 3.145
+print("The data type of a: " , type(a))
+b = int(a)
+print("The data type of b after casting 'a' variable and storing its value in b: " , type(b))
+d = float(a)
+print("The data type of d after casting 'a' variable and storing its value in d: " , type(d))
+e = str(f)
+print("The data type of e after casting 'f' variable and storing its value in e: " , type(e))
+c = 50
+print("a + c =" , int(a) + c)
