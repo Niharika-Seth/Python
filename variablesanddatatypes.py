@@ -88,3 +88,33 @@ e = str(f)
 print("The data type of e after casting 'f' variable and storing its value in e: " , type(e))
 c = 50
 print("a + c =" , int(a) + c)
+
+# User Input in python
+n = input("Enter your Name : ")  # input() always store the string data type by default 
+a = int(input("Enter your Age: ")) # int(input()) always store the integer data type 
+b = float(input("Enter your weight: "))  # float(input)) always store the float data type
+print("Welcome " + n)
+print("Your current age is" , a)
+print("Your current weight is" , b)
+
+# Write a program to input 2 numbers abd print their sum
+a = int(input("Enter First number: "))
+b = int(input("Enter Second Number: "))
+c = a + b
+print(f"The sum of {a} and {b} is" , c)
+
+# Write a program to input side of square and print it's area
+n = int(input("Enter the length of side of square: "))
+area = n*n
+print(f"The area of square for the length of side of {n} cm is {area} cm sq.") 
+
+# Write a program to input 2 floating point numbers and print their average
+a = float(input("Enter the first Number: "))
+b = float(input("Enter the second number: "))
+c = (a+b)/2
+print(f"The average of {a} and {b} is : {c}")
+
+# Write a program to input two integer numbers a and b. print True if a is greater than or equal to b. If not print False
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("a >=b ? : " , (a >= b))
