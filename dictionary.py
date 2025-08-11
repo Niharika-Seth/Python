@@ -13,5 +13,19 @@ dict = {
   "Marks" : (50,85,99,79)
 }
 print(dict)
-print("the data type of dict is: " , type(dict))
+print("The data type of dict is: " , type(dict))
 
+# To access information of dictionary
+print(dict["Name"])
+print(dict["Subjects"])
+print(dict["Marks"])
+
+# To change element of the dictionary 
+dict["Name"] = "Lara"
+print(dict)
+dict["Age"] = 22
+print(dict)
+
+# To create empty dictionary
+null_dict = {}
+print("The data type of null_dict: " , type(null_dict)) 
