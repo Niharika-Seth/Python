@@ -87,6 +87,72 @@ print("The length of your first name is : " , len(a))
 b = "hi , $i am the $ symbol , $my name is $99.69"
 print("The occurence of $ in a string is: " , b.count("$"))
 
+# Conditional Statements 
+# Synatx ----> predefined rules or standard way for programming
+# If-elif-else statement  ---> if statement will always be checked but the elif statemnet will only be checked if "if" statement is false.
+temp = int(input("Enter temperature of your location: "))
+if (temp <= 10):
+  print("The climate is very cold.")
+elif (temp <= 30):
+  print("The climate is sunny.")
+else:
+  print("The climate is very hot.")
 
+# if-else statement
+light = input("Enter the signal light (green or red): ")
+if (light == "red"):
+  print("Stop the vehicle.")
+else:
+  print("Start the vehicle.")
+
+# WAP to grade students based on marks
+m = int(input("Enter student's marks: "))
+if (m >= 90):
+  print("GRADE A")
+elif (90 > m >= 80):
+  print ("GRADE B")
+elif ( 80 > m >= 70):
+  print ("GRADE C")
+else:
+  print ("GRADE D")
+
+# Nested statements ----> statement within a statement
+age = int(input("Enter age: "))
+if (age >= 18):
+  if (age >= 21):
+    print("You can drink.")
+    print("You can drive.")
+else:
+  print("You are neither allowed to drink nor drive.")
+
+# WAP to check if the number entered by user is odd or even.
+n = int(input("Enter the number: "))
+if ( n%2 == 0):
+  print(f"{n} is an Even Number.")
+else:
+  print(f"{n} is an Odd Number.")
+
+# WAP to find the greatest of 3 numbers entered by the user.
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
+if (num1 > num2 and num1 > num3):
+  print(f"{num1} is the greatest number.")
+elif (num2 > num1 and num2 > num3):
+  print(f"{num2} is the greatest number.")
+else:
+  print(f"{num3} is the greatest number.")
+
+# WAP to check if a number is a mutiple of 7 or not
+num = int(input("Enter your number: "))
+if (num%7 == 0):
+  print(f"{num} is divisible by 7.")
+else:
+  print(f"{num} is not divisible by 7.")
+
+
+
+
+ 
 
 
