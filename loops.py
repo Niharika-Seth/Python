@@ -133,3 +133,57 @@ for el in d:
     break
   else:
     print(f"Finding {x} ...")
+
+# Range() function ----> Returns a sequence of a numbers , starting from zero by default and increments by 1 (by default) and stops before a specified number.
+# range(stop)
+for i in range(10):
+  print(i)
+
+# range(start,stop)
+for i in range (2,11):
+  print(i)
+
+# range(start,stop,step)
+for i in range(10,110,10):
+  print(i)
+
+# WAP to print even numbers from 1 to 100 using range function
+for i in  range(0,101,2):
+  print(i)
+
+# WAP to print numbers from 1 to 100 using for loop and range function
+for i in range (1,101):
+  print(i)
+
+# WAP to print numbers from 100 to 1 using for loop and range function
+for i in range (100,0,-1):
+  print(i)
+
+# WAP to print the multiplication table of a number n.
+n = int(input("Enter your number: "))
+for i in range(1, 11):
+  print(f"{n} * {i} = " , n*i)
+
+# Pass Statement ----> It is a null statement that does nothing. It is used as a placeholder for future code.
+for i in range(5):
+  pass
+print("LEFT PLACE FOR SOME USEFUL WORK")
+
+# WAP to find the sum of first n numbers using while loop.
+n = int(input("Enter your number: "))
+i = 0
+sum = 0
+while (i <= n ):
+  sum = sum + i
+  i += 1
+print(f"The sum of first {n} numbers is {sum}.")
+
+# WAP to find the factorial of first n numbers using for loop
+n = int(input("Enter number to find factorial: "))
+i = 1
+fact = 1
+for i in range(1,n+1) :
+  fact = fact * i
+  i += 1
+print(f"The factorial of {n} is {fact}.")
+  
