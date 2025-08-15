@@ -63,6 +63,47 @@ while (i <= 10):
     print(f" Finding {x} ...")
   i += 1
 
+# Break Keyword ----> used to terminate the loop when encountered
+i = 1
+while(i <= 5):
+  print(i)
+  if (i == 4):
+    break
+  i += 1
+print("End of loop")
+
+# Continue Keyword ----> terminates execution in the current iteration and continues execution of the loop with the next iteration.
+i = 0
+while (i <= 10):
+  if (i == 5):
+    i += 1
+    continue
+  print(i)
+  i += 1
+print("End of loop")
+
+# WAP to skip even numbers and print only odd numbers
+n = int(input("Enter your number: "))
+i = 1
+while (i <= n):
+  if (i%2 == 0):
+    i += 1
+    continue
+  else:
+    print(i)
+  i += 1
+
+# WAP to skip odd numbers and print only even numbers
+n = int(input("Enter your number: "))
+i = 1
+while (i <= n):
+  if (i%2 != 0):
+    i += 1
+    continue
+  else:
+    print(i)
+  i += 1
+
 
 
   
