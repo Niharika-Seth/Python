@@ -104,6 +104,32 @@ while (i <= n):
     print(i)
   i += 1
 
+# For Loop ----> used for sequential traversing in list , tuples , strings etc
+l = [1,2,3,4,5]
+for num in l:
+  print (num)
 
+a = ["Python" , "Java" , "R", "SQL" ,"C","C++" ,"C#"]
+for lang in a:
+  print(lang)
 
+b = "Niharika Seth"
+for char in b:
+  print(char)
+else:
+  print("End")
+
+# WAP to print the elements of the following list using for loops: [1,4,9,16,25,36,49,64,81,100]
+c = [1,4,9,16,25,36,49,64,81,100]
+for el in c:
+  print(el)
   
+# WAP to search for a number x in this tuple using for loop: [1,4,9,16,25,36,49,64,81,100]
+d = (1,4,9,16,25,36,49,64,81,100)
+x = int(input("Enter Number you want to search in the tuple: "))
+for el in d:
+  if (x == el):
+    print(f"{x} is found at index {i}.")
+    break
+  else:
+    print(f"Finding {x} ...")
