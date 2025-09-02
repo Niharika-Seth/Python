@@ -24,3 +24,22 @@ c = int(input("Enter third number: "))
 d = average(a,b,c)
 print(f"The average of {a} , {b} and {c} is : " , d)
 
+# Built-in Functions ----> Some pre-defined functions available in python.
+# print() function with end = " " as argument. end = " " decide what the sentence should end with.
+print("Hello World" , end = " ")
+print("My name is Lara.")
+
+# len()
+a = "DATA SCIENCE"
+print(len(a))
+
+# range()
+for i in range(1 , 11):
+  print (i)
+
+# type()
+a = 23
+print(type(a))
+
+
+
