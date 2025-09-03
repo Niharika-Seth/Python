@@ -41,5 +41,55 @@ for i in range(1 , 11):
 a = 23
 print(type(a))
 
+# In default parameters , non default arguments come first and then default argument comes.
+# For instance : def sum (a = 2 , b): ---> will throw error but def sum(a , b = 2): ----> will not throw any error.
+
+# User Defined Functions
+
+# WAF To print the length of a list. (list is the parameter)
+l = [1,2,3,4,5,6,7,8,9,10]
+n = ["mumbai" , "kolkata" , "delhi" , "noida" , "kerela"]
+def len_of_list(list):
+  a = len(list)
+  return a
+print("The length of list l is: " , len_of_list(l))
+print("The length of list n is: " , len_of_list(n))
+
+# WAF To print the elements of list in a single line. (list is a parameter)
+cities = ["MUMBAI","KOLKATA","DELHI","NOIDA"]
+cars = ["Porsche" , "Lamborghini" , "BMW","Mercedes","Ferrari","McLaren","Apollo"]
+def display_list(l):
+  return (print(l))
+print("The element of the list 'cities' are: " , display_list(cities))
+print("The element of the list 'cities' are: " , display_list(cars))
+
+# WAF to find factorial of n. (n is the parameter)
+def fact(n):
+  i = 1
+  fact = 1
+  for i in range (1,n+1):
+    fact = fact * i
+    i +=1
+  return (fact)
+a = int(input("Enter the number to find its factorial: "))
+b = fact(a)
+print(f"The factorial of {a} is: " , b)
+
+# WAF to convert USD TO INR
+def convert_usd_inr(a , b = 88.6):
+  inr = a * b
+  return(inr)
+x = int(input("Enter USD value : "))
+y = convert_usd_inr(x)
+print(f"The INR value of {x} is: " , y)
+
+# WAF to check whether the given number is odd or even.
+def even_odd(n):
+  if (n%2 == 0):
+    print(f"{n} is an even number.")
+  else:
+    print(f"{n} is an odd number.")
+a = int(input("Enter your number: "))
+even_odd(a)
 
 
